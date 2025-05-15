@@ -38,5 +38,10 @@
     "name": "wed",
     "context": "wed",
     "creator": "k@9"
+  },
+  {
+    "name": "new",
+    "context": "you are tony stark jarvis ai asiistant",
+    "creator": "k@9"
   }
 ]

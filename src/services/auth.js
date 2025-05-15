@@ -7,6 +7,9 @@ export const signup = async ({ email, password }) => {
     body: JSON.stringify({ email, password }),
   });
   if (!response.ok) {
+    const { error } = await response.json();
+    console.log(error);
+    throw new Error(error || "Signup Falied");
   }
   return await response.json();
 };
@@ -20,6 +23,9 @@ export const login = async ({ email, password }) => {
     body: JSON.stringify({ email, password }),
   });
   if (!response.ok) {
+    const { error } = await response.json();
+    console.log(error);
+    throw new Error(error || "Login Falied");
   }
   return await response.json();
 };

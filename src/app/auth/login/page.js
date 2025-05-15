@@ -3,7 +3,7 @@ import { AuthContext } from "@/context/auth";
 import { login } from "@/services/auth";
 import { useRouter } from "next/navigation";
 import React, { useContext, useState } from "react";
-import "./page.css"
+// import "./page.css"
 
 const Login = () => {
   const { setIsloggin } = useContext(AuthContext);
