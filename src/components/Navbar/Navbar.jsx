@@ -21,7 +21,7 @@ export default function Navbar() {
     router.push("/auth/login");
     destroyToken();
     setIsloggin(false)
-  }
+}
   return (
     <div className="nabar">
       <div className="logo">

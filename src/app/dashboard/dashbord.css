@@ -1,0 +1,105 @@
+
+h1 {
+  text-align: center;
+  margin: 10px;
+  font-size: 2.5rem;
+  color: #2d2d2d;
+}
+
+.todo {
+  background: white;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.todo input,
+.todo textarea {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+  resize: none;
+}
+
+.todo input:focus,
+.todo textarea:focus {
+  border-color: #5c67f2;
+  outline: none;
+}
+
+.btn-todo {
+  background: #5c67f2;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-todo:hover {
+  background: #4b54d1;
+}
+
+.chatprint {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.chatprint h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.chatBoat_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.chatBoat_list:hover {
+  transform: scale(1.02);
+}
+
+.chat-info h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.chat-info p {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.chat {
+  background: #00b894;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.chat:hover {
+  background: #019875;
+}

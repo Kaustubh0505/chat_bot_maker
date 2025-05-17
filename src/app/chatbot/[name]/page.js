@@ -4,6 +4,7 @@ import { getChatbotByName } from "@/services/chatbot";
 import { getToken } from "@/helpers/auth";
 import { useParams } from "next/navigation";
 import { askGemini } from "@/services/ai";
+import "./chatbot.css";
 
 export default function Page() {
   const { name: chatbotName } = useParams();
@@ -50,7 +51,7 @@ export default function Page() {
   return (
     <div className="chatbot-details-container">
       <h1 className="chatbot-title">{botDetails.name}</h1>
-      <p className="chatbot-context">Context: {botDetails.context}</p>
+      <div className="chatbot-context"><h3>Context:</h3> <p>{botDetails.context}</p></div>
 
       <div className="chatbot-messages">
         {messages.map((msg, index) => (

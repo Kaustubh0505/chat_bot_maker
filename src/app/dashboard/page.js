@@ -26,7 +26,7 @@ useEffect(()=>{
       name: botName,
       context: botContext,
     };
-    setChatBot((prev) => [...prev, newBot]);
+    setChatBot((prev) => [newBot, ...prev]);
     await createChatbot({
       name: botName,
       context: botContext,
